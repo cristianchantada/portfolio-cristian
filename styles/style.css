@@ -1,0 +1,19 @@
+
+nav {
+    display: none;
+}
+
+/* Resoluciones responsive:
+360×640 (móvil pequeño)
+375×667 (móvil medio)
+720×1280 (móvil grande)
+1366×768 (ordenador portátil medio)
+1440×900 (escritorio medio)
+1920×1080 (escritorio grande)*/
+
+@media (min-width: 720px) {
+    nav {
+        display: inline;
+    }
+
+}
