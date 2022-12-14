@@ -1,36 +1,88 @@
 
-nav {
-    display: none;
+/* Body */
+
+body {
+    font-family: 'Courgette', cursive
 }
 
-.header--img {
-    max-width: 100%;
-    width: 500px;
-    height: 300;
-    object-fit: cover;
+/* Navbar */
+
+
+/* Header */
+
+header {
+    background-repeat: no-repeat;
+    height: 80vh;
+   
 }
 
-.main-container, .footer--div{
+.title{
+    color: rgb(0, 0, 0);
+    position: relative;
+    left: 50vw;
+    top: 5vw;
+}
+
+
+
+
+.main-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-h1 {
+input {
+    display: block;
+}
+
+h1, h2, h3 {
     margin: 0 auto;
 }
 
-/* Resoluciones responsive:
-360×640 (móvil pequeño)
-375×667 (móvil medio)
-720×1280 (móvil grande)
-1366×768 (ordenador portátil medio)
-1440×900 (escritorio medio)
-1920×1080 (escritorio grande)*/
 
-@media (min-width: 720px) {
-    nav {
-        display: flex;
-        background-color: var(--coolor-persian-green);
+
+/* SECTIONS */
+/* Skills section */
+
+.skills--grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 15px;
+}
+
+.skill--flex-container {
+    display: flex;
+    flex-direction: column;
+    border: red 1px solid;
+    width: 1fr;
+
+}
+
+.skill--label-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: blue 1px solid;
+}
+
+/* MEDIA QUERIES */
+
+/* Laptop media queries */
+
+
+@media (min-width: 600px) {
+    .nav-container {
+        background-color: rgb(178, 185, 80);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-content: center;
+        justify-content: flex-end;
+        width: 100% ;
+        height: 75px;
     }
 }
+
+/* Desktop media queries */
