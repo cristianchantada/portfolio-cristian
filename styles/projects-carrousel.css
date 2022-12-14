@@ -1,0 +1,24 @@
+
+.projects--carrousel-container {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.div--project {
+    background-color: chocolate;
+    height: 100%;
+    width: 100%;
+}
+
+.projects--links-container {
+    display: flex;
+    justify-content: center;
+}
+
+.carrousel--link {
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+}

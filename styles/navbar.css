@@ -1,0 +1,16 @@
+nav {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    nav {
+        margin-bottom: 10px;
+        background-color: rgb(178, 185, 80);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-content: center;
+        justify-content: flex-end;
+        width: 100% ;
+        height: 75px;
+    }
+}

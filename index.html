@@ -9,24 +9,26 @@
     <link rel="stylesheet" href="./styles/var.css">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/skills-section.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/projects-carrousel.css">
     <title>Cristian Varela</title>
 </head>
 <body>
     <nav>
-        <div class="nav-container">
-            <a href="#my-projects">Mis proyectos</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact-form">Contáctame</a>
-            <a href="#follow-me">Sígueme</a>
-        </div>
+        <a href="#my-projects" role="button">Mis proyectos</a>
+        <a href="#skills" role="button">Skills</a>
+        <a href="#contact-form" role="button">Contáctame</a>
+        <a href="#follow-me" role="button">Sígueme</a>
     </nav>
     <header>
         <div id="front_page--container">
             <h1 class="title">
-                Hola,<br>
-                soy Cristian Varela</h1>
-            <em>el héroe que tu empresa necesita</em>
-            <!-- <picture>
+            Hola,<br>
+            soy Cristian Varela</h1>
+<!--             <picture>
                 <source class="header--img" id="nav--img-desktop" alt="imagen de Cristian" title="Cristian Varela Casas"
                 media="" 
                 srcset="
@@ -38,23 +40,28 @@
     
                 ">
                 <img class="header--img" src="./images/portada.jpg" id="nav--img-comon" alt="imagen de Cristian" title="Cristian Varela Casas">
-            </picture>
-            <a href="#contact-form" role="button">Contacto</a> -->
+            </picture> -->
+            <a href="#contact-form" role="button">Contacto</a>
         </div>
     </header>
     <main>
         <section id="my-projects">
             <h2 class="title">Mis proyectos</h2>
-            <div class="main-container">
-                <div>
-    
+            <div class="projects--carrousel-container">
+                <div class="div--project">
+                    <h3>Aplicación de criptomonedas</h3>
                 </div>
-                <div>
-    
+                <div class="div--project">
+                    <h3>Bombero</h3>
                 </div>
-                <div>
-    
+                <div class="div--project">
+                    <h3>Carrera universitaria</h3>
                 </div>
+            </div>
+            <div class="projects--links-container">
+                <a class="carrousel--link" href=""></a>
+                <a class="carrousel--link" href=""></a>
+                <a class="carrousel--link" href=""></a>
             </div>
         </section>
         <section id="skills">
@@ -162,12 +169,21 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="follow-me">
         <h3 class="title">Sígueme en mis redes sociales</h3>
-        <div class="main-container">
-            <a href="https://www.linkedin.com/in/cristianvarela-bomberosgalicia/" target="_blank" rel="noopener noreferrer">Linkedin</a>
-            <a href="https://www.instagram.com/cristagram_chantada/" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://www.facebook.com/cristianchantada" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <div class="footer--div-container">
+            <div class="footer--img-link-container">
+                <img src="./images/linkedin.png" alt="">
+                <a href="https://www.linkedin.com/in/cristianvarela-bomberosgalicia/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+            </div>
+            <div class="footer--img-link-container">
+                <img src="./images/instagram.png" alt="">
+                <a href="https://www.instagram.com/cristagram_chantada/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+            <div class="footer--img-link-container">
+                <img src="./images/facebook.png" alt="">
+                <a href="https://www.facebook.com/cristianchantada" target="_blank" rel="noopener noreferrer">Facebook</a>
+            </div>
         </div>
     </footer>
 </body>

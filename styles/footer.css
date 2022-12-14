@@ -1,0 +1,16 @@
+
+footer {
+    background-color: goldenrod;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer--div-container {
+    display: flex;
+}
+
+.footer--img-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
