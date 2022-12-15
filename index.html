@@ -18,7 +18,7 @@
     <title>Cristian Varela</title>
 </head>
 <body>
-    <nav>
+<!--     <nav>
         <a href="#my-projects" role="button">Mis proyectos</a>
         <a href="#skills" role="button">Skills</a>
         <a href="#contact-form" role="button">Contáctame</a>
@@ -26,45 +26,46 @@
     </nav>
     <header>
         <div id="front_page--container">
-            <h1 id="main--title">
-            Hola,<br>
-            soy Cristian Varela.</h1>
-            <em id="profession--enphasis">desarrollador web junior</em>
-            <blockquote>"Hago de todo, excepto milagros"</blockquote>
-<!--             <picture>
-                <source class="header--img" id="nav--img-desktop" alt="imagen de Cristian" title="Cristian Varela Casas"
-                media="" 
-                srcset="
-                
-                ">
-                <source class="header--img" id="nav--img-mobile" alt="imagen de Cristian" title="Cristian Varela Casas"
-                media="" 
-                srcset="
-    
-                ">
-                <img class="header--img" src="./images/portada.jpg" id="nav--img-comon" alt="imagen de Cristian" title="Cristian Varela Casas">
-            </picture> -->
-            <a href="#contact-form" role="button">Contacto</a>
+            <div class="slogan--name">
+                <h1 id="main--title">
+                    Hola,<br>
+                    soy Cristian Varela.</h1>
+                    <em id="profession--enphasis">desarrollador web junior</em>
+            </div>
+            <div>
+                <a href="#contact-form" role="button">Contacto</a>
+            </div>
+            <div>
+                <img id="lion-img" src="./images/lion-mobile.jpg" alt="">
+            </div>
         </div>
     </header>
     <main>
         <section id="my-projects">
             <h2 class="title">Mis proyectos</h2>
+            <blockquote id="cita">"Hago de todo, excepto milagros"</blockquote>
             <div class="projects--carrousel-container">
-                <div class="div--project">
-                    <h3>Aplicación de criptomonedas</h3>
+                <div id="project1" class="div--project">
+                    <h3 class="project-title">Bombero</h3>
+                    <picture>
+                        <source media="(min-width:300px)" srcset="">
+                        <source media="(min-width:300px)" srcset="">
+                        <source media="(min-width:300px)" srcset="">
+                    </picture>
                 </div>
-                <div class="div--project">
-                    <h3>Bombero</h3>
+                <div id="project2" class="div--project">
+                    <h3 class="project-title">Domador de caballos</h3>
+                    <a href="" class="img-carousel"></a>
                 </div>
-                <div class="div--project">
-                    <h3>Carrera universitaria</h3>
+                <div id="project3" class="div--project">
+                    <h3 class="project-title">Carrera universitaria</h3>
+                    <a href="" class="img-carousel"></a>
                 </div>
             </div>
             <div class="projects--links-container">
-                <a class="carrousel--link" href=""></a>
-                <a class="carrousel--link" href=""></a>
-                <a class="carrousel--link" href=""></a>
+                <a class="carrousel--link" href="#project1"></a>
+                <a class="carrousel--link" href="#project2"></a>
+                <a class="carrousel--link" href="#project3"></a>
             </div>
         </section>
         <section id="skills">
@@ -131,13 +132,13 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section id="contact-form">
             <h2 class="title">Formulario de contacto</h2>
             <div>
                 <form action="" method="post">
-                    <fieldset>
-                        <legend class="datos-personales--container">Datos personales</legend>
+                    <legend>Datos personales</legend>
+                    <div class="datos-personales--container">
                         <div class="campo-formulario--container">
                             <label for="name">Nombre</label>
                             <input type="text" id="name" name="name" required>
@@ -154,37 +155,35 @@
                             <label for="tel">Teléfono</label>
                             <input type="tel" id="tel" name="tel" required>
                         </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>¿Cómo me conociste?</legend>
+                    </div>
+                    <legend>¿Cómo me conociste?</legend>
+                    <div class="how-meet-container">
                         <div>
-                            <div>
-                                <input type="radio" id="university" name="how-meet" value="Universidad" required>
-                                <label for="university">Universidad</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="keepcoding_kick-off" name="how-meet" value="Keepcoding_kick-off" required>
-                                <label for="keepcoding_kick-off">Keepcoding kick-off</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="college" name="how-meet" value="Colegio" required>
-                                <label for="college">Colegio</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="github" name="how-meet" value="Github" required>
-                                <label for="github">Github</label>
-                            </div>
+                            <input type="radio" id="university" name="how-meet" value="Universidad" required>
+                            <label for="university">Universidad</label>
                         </div>
                         <div>
-                            <label for="github-tag">Tu tag de Github</label>
-                            <!-- Falta pattern debajo con expresión regular -->
-                            <input type="text" id="github-tag" name="github-tag" pattern="" placeholder="@githubUser">
+                            <input type="radio" id="keepcoding_kick-off" name="how-meet" value="Keepcoding_kick-off" required>
+                            <label for="keepcoding_kick-off">Keepcoding kick-off</label>
                         </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Sobre ti</legend>
-                        <textarea name="" id="" cols="30" rows="10" maxlength="180"></textarea>
-                    </fieldset>
+                        <div>
+                            <input type="radio" id="college" name="how-meet" value="Colegio" required>
+                            <label for="college">Colegio</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="github" name="how-meet" value="Github" required>
+                            <label for="github">Github</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="github-tag">Tu tag de Github</label>
+                        <!-- Falta pattern debajo con expresión regular -->
+                        <input type="text" id="github-tag" name="github-tag" pattern="" placeholder="@githubUser">
+                    </div>
+                    <legend>Sobre ti</legend>
+                    <div>
+                        <textarea name="" id="" cols="40" rows="10" maxlength="180"></textarea>
+                    </div>
                     <input type="submit" value="Enviar">
                 </form>
             </div>

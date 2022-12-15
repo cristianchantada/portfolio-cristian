@@ -1,5 +1,22 @@
+fieldset {
+    width: 80vw;
+    margin-right: 10px;
+}
 
 .datos-personales--container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-evenly;
+}
+
+.campo-formulario--container {
+    width: 100%;
     display: flex;
-    
+    flex-direction: column;
+    margin-bottom: 7px;
+}
+
+label {
+    padding: 2px;
 }

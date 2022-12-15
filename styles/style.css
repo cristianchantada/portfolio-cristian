@@ -7,6 +7,7 @@ body {
     font-family: 'Courgette';
     max-width: 1200px;
     padding: 10px;
+    position: relative;
 }
 
 
