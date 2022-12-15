@@ -1,8 +1,10 @@
 #skills {
-    background-color: darkolivegreen;
+    /* background-color: darkolivegreen; */
 }
 
 .skills--grid-container {
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -13,14 +15,36 @@
 .skill--flex-container {
     display: flex;
     flex-direction: column;
-    border: red 1px solid;
-    width: 1fr;
+    justify-content: space-around;
+    align-items: center;
+   /*  border: red 1px solid; */
+    width: 100%;
+    height: 100px;
 
 }
 
 .skill--label-container {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    border: blue 1px solid;
+    /* border: blue 1px solid; */
 }
+
+.progress-stars--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img--icon {
+    height: 100%;
+    object-fit: cover;
+}
+
+.img--stars {
+    width: 60%;
+    object-fit: cover;
+    margin-top: 5px;
+}
+

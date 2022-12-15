@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/skills-section.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/form.css">
     <link rel="stylesheet" href="./styles/projects-carrousel.css">
     <title>Cristian Varela</title>
 </head>
@@ -25,9 +26,11 @@
     </nav>
     <header>
         <div id="front_page--container">
-            <h1 class="title">
+            <h1 id="main--title">
             Hola,<br>
-            soy Cristian Varela</h1>
+            soy Cristian Varela.</h1>
+            <em id="profession--enphasis">desarrollador web junior</em>
+            <blockquote>"Hago de todo, excepto milagros"</blockquote>
 <!--             <picture>
                 <source class="header--img" id="nav--img-desktop" alt="imagen de Cristian" title="Cristian Varela Casas"
                 media="" 
@@ -69,45 +72,63 @@
             <div class="skills--grid-container">
                 <div class="skill--flex-container">
                     <div class="skill--label-container">
-                        <img src="./images/git.png" alt="">
+                        <img class="img--icon" src="./images/git.png" alt="">
                         <label>Git</label>
                 </div>
-                    <progress class="progress" max="10" value="10">10</progress>
+                    <div class="progress-stars--container">
+                        <progress class="progress" max="5" value="5"></progress>
+                        <img class="img--stars" src="./images/5stars.png" alt="">
+                    </div>
                 </div>
                 <div class="skill--flex-container">
                     <div class="skill--label-container">
-                        <img src="images/html.png" alt="">
+                        <img class="img--icon" src="images/html.png" alt="">
                         <label>HTML</label>
                     </div>
-                    <progress class="progress" max="10" value="7">7</progress>
+                    <div class="progress-stars--container">
+                        <progress class="progress" max="4" value="5"></progress>
+                        <img class="img--stars" src="./images/5stars.png" alt="">
+                    </div>
                 </div>
                 <div class="skill--flex-container">
                     <div class="skill--label-container">
-                        <img src="./images/css.png" alt="">
+                        <img class="img--icon" src="./images/css.png" alt="">
                         <label>CSS</label>
                     </div>
-                    <progress class="progress" max="10" value="4">4</progress>
+                    <div class="progress-stars--container">
+                        <progress class="progress" max="5" value="3"></progress>
+                       <img class="img--stars" src="./images/3stars.png" alt="">
+                    </div>
                 </div>
                 <div class="skill--flex-container">
                     <div class="skill--label-container">
-                        <img src="./images/js.png" alt="">
+                        <img class="img--icon" src="./images/js.png" alt="">
                         <label>JavaScript</label>
                     </div>
-                    <progress class="progress" max="10" value="2">2</progress>
+                    <div class="progress-stars--container">
+                        <progress class="progress" max="3" value="3"></progress>
+                        <img class="img--stars" src="./images/3stars.png" alt="">
+                    </div>
                 </div>
                 <div class="skill--flex-container">
                     <div class="skill--label-container">
-                        <img src="images/python.png" alt="">
+                        <img class="img--icon" src="images/python.png" alt="">
                         <label>Python</label>
                     </div>
-                    <progress class="progress" max="10" value="8">8</progress>
+                    <div class="progress-stars--container">
+                        <progress class="progress" max="5" value="4"></progress>
+                       <img class="img--stars" src="./images/4stars.png" alt="">
+                    </div>
                 </div>
                 <div class="skill--flex-container">
                     <div class="skill--label-container">
-                        <img src="images/nodejs.png" alt="">
+                        <img class="img--icon" src="images/nodejs.png" alt="">
                         <label>NodeJS</label>
                     </div>
-                    <progress class="progress" max="10" value="1">1</progress>
+                    <div class="progress-stars--container">
+                        <progress class="progress" max="5" value="1"></progress>
+                       <img class="img--stars" src="./images/1star.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
@@ -116,20 +137,20 @@
             <div>
                 <form action="" method="post">
                     <fieldset>
-                        <legend>Datos personales</legend>
-                        <div>
+                        <legend class="datos-personales--container">Datos personales</legend>
+                        <div class="campo-formulario--container">
                             <label for="name">Nombre</label>
                             <input type="text" id="name" name="name" required>
                         </div>
-                        <div>
+                        <div class="campo-formulario--container">
                             <label for="last-name">Apellidos</label>
                             <input type="text" id="last-name" name="last-name" required>
                         </div>
-                        <div>
+                        <div class="campo-formulario--container">
                             <label for="email">Correo electrónico</label>
                             <input type="email" id="email" name="email" required>
                         </div>
-                        <div>
+                        <div class="campo-formulario--container">
                             <label for="tel">Teléfono</label>
                             <input type="tel" id="tel" name="tel" required>
                         </div>
@@ -173,15 +194,15 @@
         <h3 class="title">Sígueme en mis redes sociales</h3>
         <div class="footer--div-container">
             <div class="footer--img-link-container">
-                <img src="./images/linkedin.png" alt="">
+                <img class="footer--img" src="./images/linkedin.png" alt="">
                 <a href="https://www.linkedin.com/in/cristianvarela-bomberosgalicia/" target="_blank" rel="noopener noreferrer">Linkedin</a>
             </div>
             <div class="footer--img-link-container">
-                <img src="./images/instagram.png" alt="">
+                <img class="footer--img" src="./images/instagram.png" alt="">
                 <a href="https://www.instagram.com/cristagram_chantada/" target="_blank" rel="noopener noreferrer">Instagram</a>
             </div>
             <div class="footer--img-link-container">
-                <img src="./images/facebook.png" alt="">
+                <img class="footer--img" src="./images/facebook.png" alt="">
                 <a href="https://www.facebook.com/cristianchantada" target="_blank" rel="noopener noreferrer">Facebook</a>
             </div>
         </div>

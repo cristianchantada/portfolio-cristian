@@ -1,4 +1,15 @@
 header {
     background-color: brown;
-    height: 50vh;
+    height: 70vh;
+}
+
+#main--title {
+    text-align: left;
+    padding: 10px;
+}
+
+#profession--enphasis {
+    text-decoration: none;
+    text-align: right;
+
 }
