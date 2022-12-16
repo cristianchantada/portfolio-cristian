@@ -1,13 +1,17 @@
-
 :root {
-    /* background-color: bisque; */
+    background-color: rgb(211, 207, 207);
+    color: goldenrod
 }
 
 body {
     font-family: 'Courgette';
-    max-width: 1200px;
-    padding: 10px;
+    padding: 0 0 10px ;
+    padding-top: 0;
     position: relative;
+}
+
+main, header {
+    max-width: 1080px;  
 }
 
 
@@ -16,17 +20,23 @@ section {
     padding: 10px;
 }
 
-#my-projects {
-    background-color: cornflowerblue;
-}
-
-#contact-form {
-    background-color: firebrick;
-}
-
 .title {
     text-align: center;
     margin-bottom: 10px;
+}
+
+a {
+    color: goldenrod;
+    text-decoration: none;
+    transition: color linear, 
+    border linear,
+
+}
+
+a:hover {
+    color:red;
+    border: solid 1px red;
+    cursor: pointer;
 }
 
 

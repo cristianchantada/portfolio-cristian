@@ -18,7 +18,7 @@
     <title>Cristian Varela</title>
 </head>
 <body>
-<!--     <nav>
+    <nav>
         <a href="#my-projects" role="button">Mis proyectos</a>
         <a href="#skills" role="button">Skills</a>
         <a href="#contact-form" role="button">Contáctame</a>
@@ -26,40 +26,53 @@
     </nav>
     <header>
         <div id="front_page--container">
-            <div class="slogan--name">
-                <h1 id="main--title">
-                    Hola,<br>
-                    soy Cristian Varela.</h1>
-                    <em id="profession--enphasis">desarrollador web junior</em>
-            </div>
-            <div>
-                <a href="#contact-form" role="button">Contacto</a>
-            </div>
-            <div>
-                <img id="lion-img" src="./images/lion-mobile.jpg" alt="">
-            </div>
+            <h1 id="main--title">
+                Hola,<br>
+                soy Cristian Varela.</h1>
+            <em id="profession--enphasis">desarrollador web junior</em>
+        <a href="#contact-form" role="button">Contacto</a>
+        <img id="lion-img" src="./images/lion-mobile.jpg" alt="">
         </div>
     </header>
     <main>
         <section id="my-projects">
-            <h2 class="title">Mis proyectos</h2>
-            <blockquote id="cita">"Hago de todo, excepto milagros"</blockquote>
             <div class="projects--carrousel-container">
-                <div id="project1" class="div--project">
-                    <h3 class="project-title">Bombero</h3>
-                    <picture>
-                        <source media="(min-width:300px)" srcset="">
-                        <source media="(min-width:300px)" srcset="">
-                        <source media="(min-width:300px)" srcset="">
-                    </picture>
-                </div>
-                <div id="project2" class="div--project">
-                    <h3 class="project-title">Domador de caballos</h3>
-                    <a href="" class="img-carousel"></a>
-                </div>
-                <div id="project3" class="div--project">
-                    <h3 class="project-title">Carrera universitaria</h3>
-                    <a href="" class="img-carousel"></a>
+                <h2 class="title">Mis proyectos</h2>
+                <blockquote id="cita">"Hago de todo, excepto milagros"</blockquote>
+                <div class="projects">
+                    <div id="project1" class="div--project">
+                        <h3 class="project-title">Bombero</h3>
+                        <div class="foto">
+                            <picture>
+                                <source media="(min-width:300px)" srcset="./images/bombero600w.jpg">
+                                <source media="(min-width:600px)" srcset="./images/bombero800w.jpg">
+                                <source media="(min-width:800px)" srcset="./images/bombero1080w.jpg">
+                                <img id="foto" src="./images/bombero600w.jpg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                    <div id="project2" class="div--project">
+                        <h3 class="project-title">Entrenador de animales</h3>
+                        <div class="foto">
+                            <picture>
+                                <source media="(min-width:300px)" srcset="./images/caballo600w.jpg">
+                                <source media="(min-width:600px)" srcset="./images/caballo800w.jpg">
+                                <source media="(min-width:800px)" srcset="./images/caballo1080w.jpg">
+                                <img id="foto" src="./images/caballo600w.jpg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                    <div id="project3" class="div--project">
+                        <h3 class="project-title">Carrera universitaria</h3>
+                        <div class="foto">
+                            <picture>
+                                <source media="(min-width:300px)" srcset="./images/bombero600w.jpg">
+                                <source media="(min-width:600px)" srcset="">
+                                <source media="(min-width:800px)" srcset="">
+                                <img id="foto" src="./images/bombero600w.jpg" alt="">
+                            </picture>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="projects--links-container">
@@ -132,7 +145,7 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <section id="contact-form">
             <h2 class="title">Formulario de contacto</h2>
             <div>
@@ -175,14 +188,13 @@
                             <label for="github">Github</label>
                         </div>
                     </div>
-                    <div>
-                        <label for="github-tag">Tu tag de Github</label>
-                        <!-- Falta pattern debajo con expresión regular -->
+                    <div id="div-github-tag">
+                        <label id="label-tag-github" for="github-tag">Tu tag de Github:</label>
                         <input type="text" id="github-tag" name="github-tag" pattern="" placeholder="@githubUser">
                     </div>
                     <legend>Sobre ti</legend>
                     <div>
-                        <textarea name="" id="" cols="40" rows="10" maxlength="180"></textarea>
+                        <textarea name="" id="" cols="44" rows="10" maxlength="180"></textarea>
                     </div>
                     <input type="submit" value="Enviar">
                 </form>

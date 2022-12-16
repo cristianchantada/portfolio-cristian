@@ -1,6 +1,18 @@
 
+#my-projects {
+    /* background-color: cornflowerblue; */
+}
+
 .projects--carrousel-container {
-    height: 30vh;
+/*     border: solid 1px green; */
+    min-height: 300px;
+    max-height: 500px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 8fr;
+}
+
+.projects {
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -9,14 +21,33 @@
 }
 
 .div--project {
+/*     border: solid 1px red; */
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
     margin-bottom: 10px;
 }
 
+.div--project h3 {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#foto {
+/*     border: solid 1px yellow; */
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Links */
+
 .projects--links-container {
     display: flex;
     justify-content: center;
+    padding-top: 10px;
 }
 
 .carrousel--link {
@@ -31,8 +62,4 @@
     display: block;
     margin-bottom: 10px;
     text-align: center;
-}
-
-.img-carousel {
-
 }
