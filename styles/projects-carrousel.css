@@ -1,17 +1,43 @@
 
+/* Nivel 1. Sección completa ----------------*/
+
 #my-projects {
-    /* background-color: cornflowerblue; */
+    border: solid 1px blue;
 }
 
+/* Nivel 2--------------------------------- */
+
+/* carrousel de projectos */
+
 .projects--carrousel-container {
-/*     border: solid 1px green; */
+    border: solid 1px green;
     min-height: 300px;
     max-height: 500px;
     display: grid;
     grid-template-rows: 1fr 1fr 8fr;
 }
 
+/*  caja completa Links */
+
+.projects--links-container {
+    border: solid 1px violet;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.carrousel--link {
+    background-color: black;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+}
+
+/* Nivel 3------------------------------ */
+
 .projects {
+    border: solid 1px red;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -21,7 +47,7 @@
 }
 
 .div--project {
-/*     border: solid 1px red; */
+    border: solid 2px rgb(255, 196, 0);
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -42,21 +68,7 @@
     border-radius: 10px;
 }
 
-/* Links */
 
-.projects--links-container {
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-}
-
-.carrousel--link {
-    background-color: black;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-}
 
 #cita {
     display: block;
