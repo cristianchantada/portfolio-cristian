@@ -2,7 +2,12 @@
 /* Nivel 1. Sección completa ----------------*/
 
 #my-projects {
-    border: solid 1px blue;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 /* Nivel 2--------------------------------- */
@@ -10,35 +15,26 @@
 /* carrousel de projectos */
 
 .projects--carrousel-container {
-    border: solid 1px green;
-    min-height: 300px;
-    max-height: 500px;
-    display: grid;
-    grid-template-rows: 1fr 1fr 8fr;
-}
-
-/*  caja completa Links */
-
-.projects--links-container {
-    border: solid 1px violet;
+/*     border: solid 1px green; */
     display: flex;
-    justify-content: center;
-    padding-top: 10px;
+    width: 80%;
+    flex-direction: column;
 }
 
-.carrousel--link {
-    background-color: black;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
+.projects--carrousel-container h2 {
+    font-size: 2em;
 }
 
-/* Nivel 3------------------------------ */
+.projects--carrousel-container blockquote {
+    font-size: 1.5em;
+}
+
+/* Nivel 3-------caja carrusel------------ */
 
 .projects {
-    border: solid 1px red;
+/*     border: solid 2px red; */
     width: 100%;
+    height:700px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -46,32 +42,62 @@
     scroll-behavior: smooth;
 }
 
+/* Nivel 4. proyecto individual */
+
 .div--project {
-    border: solid 2px rgb(255, 196, 0);
+/*     border: solid 2px rgb(255, 196, 0); */
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     height: 100%;
     width: 100%;
-    margin-bottom: 10px;
 }
 
-.div--project h3 {
+/* niveles 5 foto y titulo */
+
+.div--project a {
+    border: solid 1px goldenrod;
+    font-size: 1.8em;
+    border-radius: 7px;
     padding: 5px;
     margin-bottom: 5px;
 }
 
+a:hover {
+    color:red;
+    border: solid 1px red;
+    cursor: pointer;
+}
+
 #foto {
-/*     border: solid 1px yellow; */
+    border: solid 2px goldenrod;
     object-fit: cover;
     height: 100%;
     width: 100%;
     border-radius: 10px;
 }
 
-
-
 #cita {
     display: block;
     margin-bottom: 10px;
     text-align: center;
+}
+
+/*  caja completa Links */
+
+.projects--links-container {
+/*     border: solid 1px violet; */
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.carrousel--link {
+    background-color: goldenrod;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 5px;
 }

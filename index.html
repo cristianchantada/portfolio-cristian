@@ -41,7 +41,7 @@
                 <blockquote id="cita">"Hago de todo, excepto milagros"</blockquote>
                 <div class="projects">
                     <div id="project1" class="div--project">
-                        <h3 class="project-title">Bombero</h3>
+                        <a href="">Bombero</a>
                         <div class="foto">
                             <picture>
                                 <source media="(min-width:300px)" srcset="./images/bombero600w.jpg">
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     <div id="project2" class="div--project">
-                        <h3 class="project-title">Entrenador de animales</h3>
+                        <a href="">Entrenador perros de rescate</a>
                         <div class="foto">
                             <picture>
                                 <source media="(min-width:300px)" srcset="./images/caballo600w.jpg">
@@ -63,7 +63,7 @@
                         </div>
                     </div>
                     <div id="project3" class="div--project">
-                        <h3 class="project-title">Carrera universitaria</h3>
+                        <a href="">Bombero</a>
                         <div class="foto">
                             <picture>
                                 <source media="(min-width:300px)" srcset="./images/bombero600w.jpg">
@@ -146,63 +146,65 @@
                 </div>
             </div>
         </section>
-        <section id="contact-form">
-            <h2 class="title">Formulario de contacto</h2>
-            <div>
-                <form action="" method="post">
-                    <legend>Datos personales</legend>
-                    <div class="datos-personales--container">
-                        <div class="campo-formulario--container">
-                            <label for="name">Nombre</label>
-                            <input type="text" id="name" name="name" required>
+        <section id="section-contact-form">
+            <div class="contact-form">
+                <h2 class="title">Formulario de contacto</h2>
+                <div>
+                    <form action="" method="post">
+                        <legend>Datos personales</legend>
+                        <div class="datos-personales--container">
+                            <div class="campo-formulario--container">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="campo-formulario--container">
+                                <label for="last-name">Apellidos</label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </div>
+                            <div class="campo-formulario--container">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="campo-formulario--container">
+                                <label for="tel">Teléfono</label>
+                                <input type="tel" id="tel" name="tel" required>
+                            </div>
                         </div>
-                        <div class="campo-formulario--container">
-                            <label for="last-name">Apellidos</label>
-                            <input type="text" id="last-name" name="last-name" required>
+                        <legend>¿Cómo me conociste?</legend>
+                        <div class="how-meet-container">
+                            <div>
+                                <input type="radio" id="university" name="how-meet" value="Universidad" required>
+                                <label for="university">Universidad</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="keepcoding_kick-off" name="how-meet" value="Keepcoding_kick-off" required>
+                                <label for="keepcoding_kick-off">Keepcoding kick-off</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="college" name="how-meet" value="Colegio" required>
+                                <label for="college">Colegio</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="github" name="how-meet" value="Github" required>
+                                <label for="github">Github</label>
+                            </div>
                         </div>
-                        <div class="campo-formulario--container">
-                            <label for="email">Correo electrónico</label>
-                            <input type="email" id="email" name="email" required>
+                        <div id="div-github-tag">
+                            <label id="label-tag-github" for="github-tag">Tu tag de Github:</label>
+                            <input type="text" id="github-tag" name="github-tag" pattern="" placeholder="@githubUser">
                         </div>
-                        <div class="campo-formulario--container">
-                            <label for="tel">Teléfono</label>
-                            <input type="tel" id="tel" name="tel" required>
+                        <legend>Sobre ti</legend>
+                        <div id="div-textarea">
+                            <textarea name="" id="" cols="30" rows="12" maxlength="180"></textarea>
                         </div>
-                    </div>
-                    <legend>¿Cómo me conociste?</legend>
-                    <div class="how-meet-container">
-                        <div>
-                            <input type="radio" id="university" name="how-meet" value="Universidad" required>
-                            <label for="university">Universidad</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="keepcoding_kick-off" name="how-meet" value="Keepcoding_kick-off" required>
-                            <label for="keepcoding_kick-off">Keepcoding kick-off</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="college" name="how-meet" value="Colegio" required>
-                            <label for="college">Colegio</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="github" name="how-meet" value="Github" required>
-                            <label for="github">Github</label>
-                        </div>
-                    </div>
-                    <div id="div-github-tag">
-                        <label id="label-tag-github" for="github-tag">Tu tag de Github:</label>
-                        <input type="text" id="github-tag" name="github-tag" pattern="" placeholder="@githubUser">
-                    </div>
-                    <legend>Sobre ti</legend>
-                    <div>
-                        <textarea name="" id="" cols="" rows="" maxlength="180"></textarea>
-                    </div>
-                    <input type="submit" value="Enviar">
-                </form>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
             </div>
         </section>
     </main>
     <footer id="follow-me">
-        <h3 class="title">Sígueme en mis redes sociales</h3>
+        <h2 class="title">Sígueme en mis redes sociales</h2>
         <div class="footer--div-container">
             <div class="footer--img-link-container">
                 <img class="footer--img" src="./images/linkedin.png" alt="">

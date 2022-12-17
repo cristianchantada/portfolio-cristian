@@ -19,13 +19,19 @@ nav {
 .botones-navbar a {
     padding: 7px;
     border: solid 1px goldenrod;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 nav a {
     padding: 7px;
     border: solid 1px goldenrod;
     border-radius: 5px;
+}
+
+a:hover {
+    color:red;
+    border: solid 1px red;
+    cursor: pointer;
 }
 
 @media (min-width: 600px) {

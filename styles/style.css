@@ -25,7 +25,7 @@ section {
     margin-bottom: 10px;
 }
 
-a {
+a, form > input {
     color: goldenrod;
     text-decoration: none;
     transition: color linear, 
@@ -33,10 +33,14 @@ a {
 
 }
 
-a:hover {
+a:hover, form > input:hover {
     color:red;
     border: solid 1px red;
     cursor: pointer;
+}
+
+label:hover {
+    color: red;
 }
 
 
