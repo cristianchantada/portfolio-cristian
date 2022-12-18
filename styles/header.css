@@ -1,5 +1,4 @@
 header {
-/*     border: solid red 5px; */
     display: grid;
     margin-bottom: 15px;
     background-color: black;
@@ -7,7 +6,6 @@ header {
 }
 
 #main--title {
-/*     border: solid green 1px; */
     width: 100%;
     text-align: left;
     color: darkgoldenrod;
@@ -32,12 +30,31 @@ header a {
     display: block;
     padding: 10px 10px;
     border-radius: 7px;
+    margin-bottom: 10px;
 }
 
 #lion-img {
-/*     border: solid 2px orange; */
-    width: 100%;
-    height: 95%;
+    width: 80%;
+    height: 85%;
     object-fit: cover;
     margin-top: 1em;
+    border-radius: 10px;
+}
+
+picture {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media (min-width: 300px){
+
+}
+
+@media (min-width: 600px) {
+    #lion-img {
+        width: 100%;
+        height: 95%;
+        margin-top: 1em;
+    }
 }

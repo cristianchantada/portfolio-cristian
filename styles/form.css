@@ -8,6 +8,7 @@
     background-color: grey;
     border-radius: 10px;
     width: 50%;
+    min-width: 225px;
 }
 
 form {
@@ -31,9 +32,10 @@ fieldset {
 /*     border: rgb(255, 255, 255) solid 2px; */
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
     justify-content: space-evenly;
 }
+
+
 
 .campo-formulario--container {
 /*     border: rgb(22, 116, 4) solid 1px; */
@@ -45,6 +47,7 @@ fieldset {
 
 label {
     padding: 2px;
+    font-size: 1.2em;
 }
 
 .how-meet-container {
@@ -60,10 +63,13 @@ label {
 
 #div-github-tag {
     max-width: 400px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: space-around;
     align-items: center;
 }
+
+
 
 #label-tag-github {
     padding-right: 5px;
@@ -93,4 +99,13 @@ form input {
 }
 form > input {
     margin: 15px 80px 25px;
+}
+
+@media (min-width: 875px) {
+    .datos-personales--container {
+        grid-template-columns: 1fr 1fr;
+    } 
+    #div-github-tag {
+        grid-template-columns: 1fr 1fr;
+    } 
 }

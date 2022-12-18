@@ -1,7 +1,6 @@
 #skills {
 background-color: black;
 display: flex;
-min-height: 375px;
 flex-direction: column;
 justify-content: space-evenly;
 border-radius: 10px;
@@ -68,6 +67,12 @@ max-width: 1080px;
     margin-top: 5px;
 }
 
+@media (min-width:300px){
+    #skills{
+        min-height: 375px;
+    }
+}
+
 
 
 @media (min-width: 400px){
@@ -82,3 +87,14 @@ max-width: 1080px;
     }
 }
 
+@keyframes progress-animation {
+    0% {
+        
+    }
+    40% {
+        
+    }
+    100% {
+        
+    }
+}

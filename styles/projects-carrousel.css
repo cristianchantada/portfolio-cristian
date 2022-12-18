@@ -22,7 +22,7 @@
 }
 
 .projects--carrousel-container h2 {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .projects--carrousel-container blockquote {
@@ -34,7 +34,7 @@
 .projects {
 /*     border: solid 2px red; */
     width: 100%;
-    height:700px;
+    height:200px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -54,11 +54,13 @@
     width: 100%;
 }
 
+
+
 /* niveles 5 foto y titulo */
 
 .div--project a {
     border: solid 1px goldenrod;
-    font-size: 1.8em;
+    font-size: 1em;
     border-radius: 7px;
     padding: 20px;
     margin-bottom: 5px;
@@ -71,6 +73,8 @@ a:hover {
     cursor: pointer;
 }
 
+
+
 #foto {
     border: solid 2px goldenrod;
     object-fit: cover;
@@ -82,8 +86,31 @@ a:hover {
 
 #cita {
     display: block;
+    padding-top: 7px;
     margin-bottom: 10px;
     text-align: center;
+    font-size: 1em;
+}
+
+@media (min-width: 300px){
+    .projects{
+        height: 400px;
+    }
+}
+
+@media (min-width: 600px){
+    .projects{
+        height: 700px;
+    }
+    .div--project a {
+        font-size: 1.8em;
+    }
+    .projects--carrousel-container h2 {
+        font-size: 2em;
+    }
+    #cita {
+        font-size: 1.3em;
+    }
 }
 
 /*  caja completa Links */

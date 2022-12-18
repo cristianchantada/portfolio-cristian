@@ -32,12 +32,16 @@
                 soy Cristian Varela</h1>
             <em id="profession--enphasis">desarrollador web junior</em>
             <a href="#contact-form" role="button">Contacto</a>
-            <img id="lion-img" src="./images/lion-mobile.jpg" alt="">
+            <picture>
+                <source media="(min-width:600px)" srcset="./images/lion-mobile.jpg">
+                <source media="(min-width:300px)" srcset="./images/lionsmall2.jpg">
+                <img id="lion-img" src="./images/lionsmall2.jpg" alt="">
+            </picture>
     </header>
     <main>
         <section id="my-projects">
             <div class="projects--carrousel-container">
-                <h2 class="title">Proyectos en los que participo como programador</h2>
+                <h2 class="title">Proyectos en los que participo... de alguna forma</h2>
                 <blockquote id="cita">"Hago de todo, excepto milagros"</blockquote>
                 <div class="projects">
                     <div id="project1" class="div--project">
@@ -85,7 +89,7 @@
                         <label>HTML</label>
                     </div>
                     <div class="progress-stars--container">
-                        <progress class="progress" max="4" value="5"></progress>
+                        <progress class="progress" max="4" value="5" ></progress>
                         <img class="img--stars" src="./images/5stars.png" alt="">
                     </div>
                 </div>
@@ -176,7 +180,7 @@
                         </div>
                         <div id="div-github-tag">
                             <label id="label-tag-github" for="github-tag">Tu tag de Github:</label>
-                            <input type="text" id="github-tag" name="github-tag" pattern="" placeholder="@githubUser">
+                            <input type="text" id="github-tag" name="github-tag" pattern="^@[^\s]+" placeholder="@githubUser">
                         </div>
                         <legend>Sobre ti</legend>
                         <div id="div-textarea">
@@ -192,15 +196,27 @@
         <h2 class="title">Sígueme en mis redes sociales</h2>
         <div class="footer--div-container">
             <div class="footer--img-link-container">
-                <img class="footer--img" src="./images/linkedin.png" alt="">
+                <picture>
+                    <source media="(min-width: 600px)" srcset="images/linkedin.png">
+                    <source media="(min-width: 300px)" srcset="images/linkedin-small.png">
+                    <img class="footer--img" src="images/linkedin-small.png" alt="">
+                </picture>
                 <a href="https://www.linkedin.com/in/cristianvarela-bomberosgalicia/" target="_blank" rel="noopener noreferrer">Linkedin</a>
             </div>
             <div class="footer--img-link-container">
-                <img class="footer--img" src="./images/instagram.png" alt="">
+                <picture>
+                    <source media="(min-width: 600px)" srcset="images/instagram.png">
+                    <source media="(min-width: 300px)" srcset="images/instagram-small.png">
+                    <img class="footer--img" src="./images/instagram-small.png" alt="">
+                </picture>
                 <a href="https://www.instagram.com/cristagram_chantada/" target="_blank" rel="noopener noreferrer">Instagram</a>
             </div>
             <div class="footer--img-link-container">
-                <img class="footer--img" src="./images/facebook.png" alt="">
+                <picture>
+                    <source media="(min-width: 600px)" srcset="images/facebook.png">
+                    <source media="(min-width: 300px)" srcset="images/facebook-small.png">
+                    <img class="footer--img" src="images/facebook-small.png" alt="">
+                </picture>
                 <a href="https://www.facebook.com/cristianchantada" target="_blank" rel="noopener noreferrer">Facebook</a>
             </div>
         </div>
