@@ -1,18 +1,16 @@
 .body-projects {
-    background-color: gray;
+    background-color: var(--coolor-secondary);
 }
 
 .main-projects {
     border-radius: 10px;
-/*     border: solid 1px blue; */
     max-width: 90%;
     display: flex;
     flex-direction: column;
 }
 
 header {
-    border: solid 1px rgb(8, 94, 19);
-    background-color: black;
+    background-color: var(--coolor-primary);
     height: 100%;
     border-radius: 10px;
     width: 100%;
@@ -32,7 +30,7 @@ header {
 }
 
 .project{
-    background-color: black;
+    background-color: var(--coolor-primary);
     border-radius: 15px;
     display: grid;
     grid-template-columns: 1fr;
@@ -45,7 +43,7 @@ header {
 }
 
 .project img{
-    border: solid goldenrod 3px;
+    border: solid var(--coolor-font) 3px;
     border-radius: 10px;
     object-fit: cover;
     height: 90%;
@@ -53,17 +51,15 @@ header {
 }
 
 a {
-    background-color: black;
-    border: solid 1px goldenrod;
+    background-color: var(--coolor-primary);
+    border: solid 1px var(--coolor-font);
     font-size: 1.8em;
     border-radius: 7px;
     padding: 20px;
     margin-bottom: 30px;
-
 }
 
 .write-project {
-/*     border: solid 1px red; */
     height: 90%;
     width: 90%;
     display: flex;
@@ -73,13 +69,11 @@ a {
 }
 
 .project p {
-/*     border: solid 1px rgb(5, 68, 10); */
     text-align: justify;
     padding: 10px;
 }
 
 .project h2 {
-/*     border: solid 1px rgb(17, 5, 121); */
     height: 20%;
     width: 90%;
 }

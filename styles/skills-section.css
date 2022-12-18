@@ -1,5 +1,5 @@
 #skills {
-background-color: black;
+background-color: var(--coolor-primary);
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
@@ -7,15 +7,7 @@ border-radius: 10px;
 max-width: 1080px;
 }
 
-#skills h2 {
-   /*  border: solid 1px green; */
-}
-
-/* Nivel 1: contenedor de todo */
-
 .skills--grid-container {
-/*     border: solid 1px red; */
-
     width: 80%;
     display: grid;
     grid-template-columns: 1fr;
@@ -24,10 +16,7 @@ max-width: 1080px;
     grid-gap: 50px 20px;
 }
 
-/* Nivel 2: caja completa programa */
-
 .skill--flex-container {
-/*     border: solid 1px rgb(189, 192, 19); */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -36,20 +25,14 @@ max-width: 1080px;
 
 }
 
-/* Nivel 3: icono programa + nombre */
-
 .skill--label-container {
-/*     border: solid 1px blue; */
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-/* Barra de progreso y estrellitas */
-
 .progress-stars--container {
-/*     border: solid 1px rgb(14, 92, 7); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,7 +53,7 @@ max-width: 1080px;
 .animation-container {
     border-radius: 50px;
     background-color: white;
-    border: solid 2px grey;
+    border: solid 2px var(--coolor-secondary);
     width: 160px;
     display: flex;
     justify-content: left;
@@ -83,50 +66,6 @@ max-width: 1080px;
     background-color: rgb(14, 135, 235);
     margin-left: 0;
     
-}
-
-#animation-git {
-    width: 100%; 
-}
-
-#animation-html {
-    width: 100%;
-}
-
-#animation-css {
-    width: 60%;
-}
-
-#animation-js {
-    width: 60%;
-}
-
-#animation-python {
-    width: 80%;
-}
-
-#animation-node {
-    width: 20%;
-}
-
-
-
-@media (min-width:300px){
-    #skills{
-        min-height: 375px;
-    }
-}
-
-@media (min-width: 400px){
-    .skills--grid-container {
-        grid-template-columns: 1fr 1fr;
-    }  
-}
-
-@media (min-width: 600px){
-    .skills--grid-container {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
 }
 
 @keyframes anime-git {
@@ -206,28 +145,45 @@ max-width: 1080px;
     width: 100% 
 }
 
-#animation-html:hover {
+#animation-html {
     animation: anime-html 5s;
     width: 100% 
 }
 
-#animation-css:hover {
+#animation-css {
     animation: anime-css 5s;
     width: 60% 
 }
 
-#animation-js:hover {
+#animation-js {
     animation: anime-js 5s;
     width: 60% 
 }
 
-#animation-python:hover {
+#animation-python {
     animation: anime-python 5s;
     width: 80% 
 }
 
-#animation-node:hover {
+#animation-node {
     animation: anime-node 5s;
     width: 10% 
 }
 
+@media (min-width:300px){
+    #skills{
+        min-height: 375px;
+    }
+}
+
+@media (min-width: 400px){
+    .skills--grid-container {
+        grid-template-columns: 1fr 1fr;
+    }  
+}
+
+@media (min-width: 600px){
+    .skills--grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

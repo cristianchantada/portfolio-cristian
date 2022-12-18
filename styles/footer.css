@@ -1,6 +1,6 @@
 
 footer {
-    background-color: grey;
+    background-color:var(--coolor-secondary);
     height: 12vh;
     display: flex;
     justify-content: space-around;
@@ -51,4 +51,3 @@ img, source {
             font-size: 1.5em;
         }
 }
-

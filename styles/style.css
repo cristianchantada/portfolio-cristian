@@ -1,6 +1,6 @@
 :root {
     background-color: rgb(211, 207, 207);
-    color: goldenrod
+    color: var(--coolor-font)
 }
 
 body {
@@ -15,7 +15,6 @@ main, header {
     max-width: 1080px;  
 }
 
-
 section {
     margin-bottom: 20px;
     padding: 10px;
@@ -28,7 +27,7 @@ section {
 }
 
 a, form > input {
-    color: goldenrod;
+    color: var(--coolor-font);
     text-decoration: none;
     transition: color linear, 
     border linear,
@@ -36,13 +35,13 @@ a, form > input {
 }
 
 a:hover, form > input:hover {
-    color:red;
-    border: solid 1px red;
+    color: var(--coolor-font-secondary);
+    border: var(--coolor-font-secondary);
     cursor: pointer;
 }
 
 label:hover {
-    color: red;
+    color: var(--coolor-font-secondary);
 }
 
 

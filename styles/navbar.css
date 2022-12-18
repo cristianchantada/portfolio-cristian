@@ -1,6 +1,6 @@
 nav {
     display: none;
-    background-color: gray;
+    background-color: var(--coolor-secondary);
     margin-bottom: 10px;
     margin-bottom: 10px;
     height: 75px;
@@ -18,19 +18,19 @@ nav {
 
 .botones-navbar a {
     padding: 7px;
-    border: solid 1px goldenrod;
+    border: solid 1px var(--coolor-font);
     border-radius: 7px;
 }
 
 nav a {
     padding: 7px;
-    border: solid 1px goldenrod;
+    border: solid 1px var(--coolor-font);
     border-radius: 5px;
 }
 
 a:hover {
-    color:red;
-    border: solid 1px red;
+    color: var(--coolor-font-secondary);
+    border: solid 1px var(--coolor-font-secondary);
     cursor: pointer;
 }
 

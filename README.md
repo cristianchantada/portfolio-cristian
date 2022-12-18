@@ -53,11 +53,15 @@
     
         * Falta una **refactorización completa del código**, principalmente de todos los .css, pero también de los .html (sobran id's y clases que posteriormente no se han utilizado, alteraría sus nombres ya que la estructura a cambiado a lo largo del proyecto, etc...).
 
+        * No me ha dado tiempo a hacer una revisión completa del código: etiquetas, propiedades, atibutos, etc..
+
         * Ahora habiendo aprendido ya, con esta práctica, grid y flex bien, alteraría varios de ellos: algunos serían cambiados de flez a grid o viceversa; la estructura interna de cada uno también variaría.
 
         * Se hubiese buscado una solución adecuada para aquellos dispositivos con display de 240px e inferior.
 
-        * En lo que respecta a las imágenes responsive, en el header se hubiera optado además de por escalar la imagen, combinarla con  densidad.
+        * En lo que respecta a las imágenes responsive, en el header se hubiera optado además de por escalar la imagen, combinarla con densidad.
+
+        * Las barras de progreso animadas con CSS comienzan la animación al recargar la página. No me gusta demasiado como ha quedado esto, hubiese preferido al hacer scroll o :hover sobre su sección, ya que de este modo al entrar en la página seguramente no veas la animación porque ya haya finalizado, pero no me ha dado tiempo a más.
 
         * Hubiese buscado solución para que uno de los audios, incluido en el proyecto pero no referenciado en el index.html, hubiese comenzado a sonar cuando hiciésemos **:hover** sobre las animaciones y estas fuesen aumentando poquito a poquito ("cresce piano piano). 
 

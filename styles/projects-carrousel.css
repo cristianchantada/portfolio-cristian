@@ -1,8 +1,6 @@
 
-/* Nivel 1. Sección completa ----------------*/
-
 #my-projects {
-    background-color: rgb(0, 0, 0);
+    background-color: var(--coolor-primary);
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -10,12 +8,7 @@
     height: 100%;
 }
 
-/* Nivel 2--------------------------------- */
-
-/* carrousel de projectos */
-
 .projects--carrousel-container {
-/*     border: solid 1px green; */
     display: flex;
     width: 80%;
     flex-direction: column;
@@ -29,10 +22,7 @@
     font-size: 1.5em;
 }
 
-/* Nivel 3-------caja carrusel------------ */
-
 .projects {
-/*     border: solid 2px red; */
     width: 100%;
     height:200px;
     display: flex;
@@ -42,10 +32,7 @@
     scroll-behavior: smooth;
 }
 
-/* Nivel 4. proyecto individual */
-
 .div--project {
-/*     border: solid 2px rgb(255, 196, 0); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,12 +41,8 @@
     width: 100%;
 }
 
-
-
-/* niveles 5 foto y titulo */
-
 .div--project a {
-    border: solid 1px goldenrod;
+    border: solid 1px var(--coolor-font);
     font-size: 1em;
     border-radius: 7px;
     padding: 20px;
@@ -68,15 +51,13 @@
 }
 
 a:hover {
-    color:red;
-    border: solid 1px red;
+    color: var(--coolor-font-secondary);
+    border: solid 1px var(--coolor-font-secondary);
     cursor: pointer;
 }
 
-
-
 #foto {
-    border: solid 2px goldenrod;
+    border: solid 2px var(--coolor-font);
     object-fit: cover;
     max-height: 470px;
     height: 100%;
@@ -90,6 +71,21 @@ a:hover {
     margin-bottom: 10px;
     text-align: center;
     font-size: 1em;
+}
+
+.projects--links-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.carrousel--link {
+    background-color: var(--coolor-font);
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 5px;
 }
 
 @media (min-width: 300px){
@@ -111,22 +107,4 @@ a:hover {
     #cita {
         font-size: 1.3em;
     }
-}
-
-/*  caja completa Links */
-
-.projects--links-container {
-/*     border: solid 1px violet; */
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-    margin-bottom: 10px;
-}
-
-.carrousel--link {
-    background-color: goldenrod;
-    border-radius: 50%;
-    width: 1.5em;
-    height: 1.5em;
-    margin: 0 5px;
 }

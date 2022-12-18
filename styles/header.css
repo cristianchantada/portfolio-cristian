@@ -1,14 +1,14 @@
 header {
     display: grid;
     margin-bottom: 15px;
-    background-color: black;
+    background-color: var(--coolor-primary);
     border-radius: 10px;
 }
 
 #main--title {
     width: 100%;
     text-align: left;
-    color: darkgoldenrod;
+    color: var(--coolor-font);
     font-size: 2em;
     padding: 1.5rem;
 }
@@ -24,8 +24,8 @@ header {
 }
 
 header a {
-    border: solid 1px darkgoldenrod;
-    color: darkgoldenrod;
+    border: solid 1px var(--coolor-font);
+    color: var(--coolor-font);
     text-align: center;
     display: block;
     padding: 10px 10px;
@@ -45,10 +45,6 @@ picture {
     display: flex;
     flex-direction: column;
     text-align: center;
-}
-
-@media (min-width: 300px){
-
 }
 
 @media (min-width: 600px) {

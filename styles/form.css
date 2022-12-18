@@ -1,18 +1,17 @@
 
 #section-contact-form {
-    background-color: black;
+    background-color: var(--coolor-primary);
     border-radius: 10px;
 }
 
 #contact-form {
-    background-color: grey;
+    background-color: var(--coolor-secondary);
     border-radius: 10px;
     width: 50%;
     min-width: 225px;
 }
 
 form {
-/*     border: red solid 1px; */
     align-content: center;
 }
 
@@ -29,16 +28,12 @@ fieldset {
 }
 
 .datos-personales--container {
-/*     border: rgb(255, 255, 255) solid 2px; */
     display: grid;
     grid-template-columns: 1fr;
     justify-content: space-evenly;
 }
 
-
-
 .campo-formulario--container {
-/*     border: rgb(22, 116, 4) solid 1px; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -51,7 +46,6 @@ label {
 }
 
 .how-meet-container {
-/*     border: rgb(167, 223, 13) solid 1px; */
     max-width: 400px;
     padding: 10px;
     text-align: left;
@@ -69,8 +63,6 @@ label {
     align-items: center;
 }
 
-
-
 #label-tag-github {
     padding-right: 5px;
 }
@@ -82,8 +74,8 @@ label {
 textarea {
     border-radius: 10px;
     margin-bottom: 20px;
-    background-color: black;
-    color: goldenrod;
+    background-color: var(--coolor-primary);
+    color: var(--coolor-font);
     padding: 10px;
     font-size: 1.5em;
     font-weight: 300;
@@ -91,9 +83,9 @@ textarea {
 }
 
 form input {
-    color: goldenrod;
-    border: solid 1px goldenrod;
-    background-color: black;
+    color: var(--coolor-font);
+    border: solid 1px var(--coolor-font);
+    background-color: var(--coolor-primary);
     border-radius: 5px;
     padding: 10px 15px;
 }
