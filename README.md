@@ -54,10 +54,12 @@
 ### Importante:
 
     Pese a que, de manera previa a la corrección y con permiso del formador, creo cumplidos los requisitos
-    de la actividad, no puedo considerar el proyecto finalizado debido a que no he llegado a los objetivos auto-exigidos. A fecha de expiración del plazo de entrega no he podido llevarlos a cabo:
+    de la actividad, no puedo considerar el proyecto finalizado debido a que no he llegado a los objetivos auto-exigidos. 
+    A fecha de expiración del plazo de entrega no he podido llevarlos a cabo:
     
         * Falta una **refactorización completa del código**, principalmente de todos los .css, pero también de 
-        los .html (sobran id's y clases que posteriormente no se han utilizado, alteraría sus nombres ya que la estructura a cambiado a lo largo del proyecto, etc...).
+        los .html (sobran id's y clases que posteriormente no se han utilizado, alteraría sus nombres ya que la estructura a cambiado 
+        a lo largo del proyecto, etc...).
 
         * No me ha dado tiempo a hacer una revisión completa del código: etiquetas, propiedades, atibutos, etc..
 
@@ -74,5 +76,6 @@
         en la página seguramente no veas la animación porque ya haya finalizado, pero no me ha dado tiempo a más.
 
         * Hubiese buscado solución para que uno de los audios, incluido en el proyecto pero no referenciado en el index.html, 
-        hubiese comenzado a sonar cuando hiciésemos **:hover** sobre las animaciones y estas fuesen aumentando poquito a poquito ("cresce piano piano). 
+        hubiese comenzado a sonar cuando hiciésemos **:hover** sobre las animaciones y estas 
+        fuesen aumentando poquito a poquito ("cresce piano piano). 
 
