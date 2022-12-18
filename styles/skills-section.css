@@ -67,13 +67,55 @@ max-width: 1080px;
     margin-top: 5px;
 }
 
+.animation-container {
+    border-radius: 50px;
+    background-color: white;
+    border: solid 2px grey;
+    width: 160px;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.animation {
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgb(14, 135, 235);
+    margin-left: 0;
+    
+}
+
+#animation-git {
+    width: 100%; 
+}
+
+#animation-html {
+    width: 100%;
+}
+
+#animation-css {
+    width: 60%;
+}
+
+#animation-js {
+    width: 60%;
+}
+
+#animation-python {
+    width: 80%;
+}
+
+#animation-node {
+    width: 20%;
+}
+
+
+
 @media (min-width:300px){
     #skills{
         min-height: 375px;
     }
 }
-
-
 
 @media (min-width: 400px){
     .skills--grid-container {
@@ -87,14 +129,105 @@ max-width: 1080px;
     }
 }
 
-@keyframes progress-animation {
+@keyframes anime-git {
     0% {
-        
+        width: 0%
     }
-    40% {
-        
+    50% {
+        width: 50%
     }
     100% {
-        
+        width: 100%
     }
 }
+
+@keyframes anime-html {
+    0% {
+        width: 0%
+    }
+    50% {
+        width: 50%
+    }
+    100% {
+        width: 100%
+    }
+}
+
+@keyframes anime-css {
+    0% {
+        width: 0%
+    }
+    50% {
+        width: 30%
+    }
+    100% {
+        width: 60%
+    }
+}
+
+@keyframes anime-js {
+    0% {
+        width: 0%
+    }
+    50% {
+        width: 30%
+    }
+    100% {
+        width: 60%
+    }
+}
+
+@keyframes anime-python {
+    0% {
+        width: 0%
+    }
+    50% {
+        width: 40%
+    }
+    100% {
+        width: 80%
+    }
+}
+
+@keyframes anime-node {
+    0% {
+        width: 0%
+    }
+    50% {
+        width: 5%
+    }
+    100% {
+        width: 10%
+    }
+}
+
+#animation-git {
+    animation: anime-git 5s;
+    width: 100% 
+}
+
+#animation-html:hover {
+    animation: anime-html 5s;
+    width: 100% 
+}
+
+#animation-css:hover {
+    animation: anime-css 5s;
+    width: 60% 
+}
+
+#animation-js:hover {
+    animation: anime-js 5s;
+    width: 60% 
+}
+
+#animation-python:hover {
+    animation: anime-python 5s;
+    width: 80% 
+}
+
+#animation-node:hover {
+    animation: anime-node 5s;
+    width: 10% 
+}
+
